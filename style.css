@@ -76,9 +76,20 @@ img {
 /*mediaquery*/
 
 @media screen and (max-width: 420px) {
+  h3, h1, body {
+    margin: 0;
+  }
+  
   .row {
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
+    padding: 15px 0;
+  }
+
+  #lezioni {
+    background-color: lightgray;
   }
 
   #lezioni .row>.left,
@@ -86,10 +97,13 @@ img {
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
-  width: 100%;
+  width: 96%;
   float: none;
+  margin: auto;
   }
 
-
+  img {
+    height: 100px;
+  }
 
 }
