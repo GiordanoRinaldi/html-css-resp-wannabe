@@ -76,8 +76,15 @@ img {
 /*mediaquery*/
 
 @media screen and (max-width: 420px) {
+  
+  /*common*/
+
   h3, h1, body {
     margin: 0;
+  }
+
+  img {
+    height: 100px;
   }
   
   .row {
@@ -88,22 +95,34 @@ img {
     padding: 15px 0;
   }
 
-  #lezioni {
+  #lezioni, #why {
     background-color: lightgray;
   }
+
+  /*blocco lezioni+steps*/
 
   #lezioni .row>.left,
   #lezioni .row>.right,
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
-  width: 96%;
-  float: none;
-  margin: auto;
+    width: 96%;
+    float: none;
+    margin: auto;
   }
 
-  img {
-    height: 100px;
-  }
+  /*blocco why*/
 
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin: auto;
+    margin-top: 10px;
+    width: 96%;
+  } 
+
+  #why .row img {
+    height: 60px;
+    padding: 20px;
+  }
 }
